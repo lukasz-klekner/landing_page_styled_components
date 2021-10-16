@@ -1,12 +1,14 @@
 import styled from 'styled-components'
+
+import SG from '../StyledComponents'
 import SocialIcons from './SocialIcons'
 
 const Footer = () => (
   <S.Footer>
-    <S.Container>
+    <SG.Container>
       <img src='./images/logo_white.svg' alt='' />
 
-      <S.Flex>
+      <SG.Flex>
         <ul>
           <li>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -27,33 +29,14 @@ const Footer = () => (
           <li>Contact Us</li>
         </ul>
         <SocialIcons />
-      </S.Flex>
+      </SG.Flex>
 
       <p>&copy; 2021 Huddle. All rights reserved</p>
-    </S.Container>
+    </SG.Container>
   </S.Footer>
 )
 
 const S = {
-  Container: styled.div`
-    width: 1000px;
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-  `,
-  Flex: styled.div`
-    display: flex;
-    align-items: center;
-    & > div,
-    & > ul {
-      flex: 1;
-    }
-
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      flex-direction: column;
-      text-align: center;
-    }
-  `,
   Footer: styled.footer`
     background-color: ${({ theme }) => theme.colors.footer};
     color: #fff;
