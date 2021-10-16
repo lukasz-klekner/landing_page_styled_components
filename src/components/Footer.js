@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import SocialIcons from './SocialIcons'
 
 const Footer = () => (
   <S.Footer>
@@ -25,6 +26,7 @@ const Footer = () => (
           <li>Blog</li>
           <li>Contact Us</li>
         </ul>
+        <SocialIcons />
       </S.Flex>
 
       <p>&copy; 2021 Huddle. All rights reserved</p>
