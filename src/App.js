@@ -1,5 +1,6 @@
 import styled, { ThemeProvider } from 'styled-components'
 import Card from './components/Card'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import content from './content'
 import GlobalStyles from './GlobalStyles'
@@ -16,6 +17,7 @@ function App() {
             <Card key={id} item={item} />
           ))}
         </S.Container>
+        <Footer />
       </>
     </ThemeProvider>
   )
